@@ -17,7 +17,7 @@
     const container = document.getElementById('games');
 
     appIDs.forEach(id => {
-      fetch(`/steam/${id}`)
+      fetch(`https://store.steampowered.com/api/appdetails?appids=${id}`)
         .then(res => res.json())
         .then(data => {
           if (!data || !data[id] || !data[id].success || !data[id].data) {
