@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gambizz Games Studio - Каталог</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 text-center text-2xl font-bold">Gambizz Games Studio</header>
+  <main class="p-6">
+    <h1 class="text-3xl mb-6">Каталог игр</h1>
+    <div id="games" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+  <script>
+    const appIDs = ['730', '570', '440', '1174180', '381210', '1245620', '477160', '271590'];
+    const container = document.getElementById('games');
+
+    appIDs.forEach(id => {
+      fetch(`/steam/${id}`)
+        .then(res => res.json())
+        .then(data => {
+          if (!data || !data[id] || !data[id].success || !data[id].data) {
+            console.warn(`Пропущен appid ${id} — данные отсутствуют или недействительны.`);
+            return;
+          }
+
+          const game = data[id].data;
+
+          const gameCard = document.createElement('div');
+          gameCard.className = 'bg-gray-800 p-4 rounded shadow-lg';
+
+          const image = document.createElement('img');
+          image.src = game.header_image;
+          image.alt = game.name;
+          image.className = 'mb-4 rounded';
+
+          const title = document.createElement('h2');
+          title.textContent = game.name;
+          title.className = 'text-xl font-bold mb-2';
+
+          const desc = document.createElement('p');
+          desc.textContent = game.short_description;
+          desc.className = 'mb-2';
+
+          const price = document.createElement('p');
+          price.className = 'text-green-400 mb-2';
+          price.textContent = game.is_free ? 'Бесплатно' :
+            (game.price_overview ? (game.price_overview.final / 100) + '₽' : 'Цена неизвестна');
+
+          const buyButton = document.createElement('button');
+          buyButton.textContent = 'Купить';
+          buyButton.className = 'bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded';
+          buyButton.addEventListener('click', () => {
+            window.open(`https://store.steampowered.com/app/${id}`, '_blank');
+          });
+
+          gameCard.appendChild(image);
+          gameCard.appendChild(title);
+          gameCard.appendChild(desc);
+          gameCard.appendChild(price);
+          gameCard.appendChild(buyButton);
+
+          container.appendChild(gameCard);
+        })
+        .catch(err => console.error(`Ошибка загрузки данных для appid ${id}:`, err));
+    });
+  </script>
+</body>
+</html>
