@@ -1,148 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gambizz Games Studio - Каталог</title>
-
-  <!-- SEO-теги -->
-  <meta name="description" content="Gambizz Games Studio — интернет-магазин игр Steam. Покупай лучшие игры напрямую и поддерживай разработчика gambizz.">
-  <meta name="keywords" content="Gambizz, Steam игры, купить игры, игры онлайн, Red Dead Redemption 2, GTA V, Dead by Daylight">
-  <meta name="author" content="Gambizz Games Studio">
-
-  <!-- Верификация для Яндекс.Вебмастера -->
-  <meta name="yandex-verification" content="49664ceae6f43dc5" />
-
-  <!-- Иконка сайта -->
   <link rel="icon" href="icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <!-- Manifest для PWA -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- TailwindCSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <header class="bg-gray-800 p-4 text-center text-2xl font-bold">Gambizz Games Studio</header>
+<body class="bg-gray-100 text-gray-900">
 
-  <!-- YouTube Banner -->
-  <div class="bg-red-600 p-4 text-center">
-    <a href="https://www.youtube.com/@gambi96059" target="_blank" class="text-white text-xl font-semibold hover:underline">
-      🎬 Подпишись на мой YouTube канал: @gambi96059
-    </a>
-  </div>
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Gambizz Games Studio</h1>
+      <a href="https://www.youtube.com/@gambi96059" target="_blank" class="text-sm text-red-600 hover:underline">YouTube: @gambi96059</a>
+    </div>
+  </header>
 
-  <main class="p-6">
-    <h1 class="text-3xl mb-6">Каталог игр</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Info Section -->
+  <section class="container mx-auto mt-6 bg-blue-50 border border-blue-200 rounded p-4">
+    <p class="text-sm text-gray-800">
+      Добро пожаловать в <strong>Gambizz Games Studio</strong>!Я продаю ключи и аккаунты Steam по выгодным ценам. Покупка осуществляется через Telegram-бота, автоматически и моментально!
+    </p>
+  </section>
 
-      <!-- Red Dead Redemption 2 -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Red Dead Redemption 2</h2>
-        <p class="mb-2">Эпическая история вестерна от Rockstar Games.</p>
-        <p class="text-green-400 mb-2">1500₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_red_dead_redemption_2', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
+  <!-- Catalog -->
+  <main class="container mx-auto py-8">
+    <h2 class="text-2xl font-semibold mb-6">Каталог игр</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <!-- Все карточки игр -->
+      <!-- предыдущие карточки -->
+      <!-- ... -->
+
+      <!-- BeamNG.drive -->
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/284160/header.jpg" alt="BeamNG.drive" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">BeamNG.drive</h3>
+          <p class="text-sm text-gray-600 mb-2">Реалистичный симулятор аварий и вождения.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">1100₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_beamng_drive" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
       </div>
 
-      <!-- Human: Fall Flat -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg" alt="Human: Fall Flat" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Human: Fall Flat</h2>
-        <p class="mb-2">Физическая головоломка с весёлым кооперативом.</p>
-        <p class="text-green-400 mb-2">435₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_human_fall_flat', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
+      <!-- Euro Truck Simulator 2 -->
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg" alt="Euro Truck Simulator 2" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">Euro Truck Simulator 2</h3>
+          <p class="text-sm text-gray-600 mb-2">Вождение грузовиков по Европе с реалистичной физикой.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">405₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_ets2" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
+      </div>
+
+      <!-- Detroit: Become Human -->
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg" alt="Detroit: Become Human" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">Detroit: Become Human</h3>
+          <p class="text-sm text-gray-600 mb-2">Интерактивный триллер о будущем человечества и андроидов.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">1750₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_detroit" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
+      </div>
+      <!-- Rust -->
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg" alt="Rust" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">Rust</h3>
+          <p class="text-sm text-gray-600 mb-2">Онлайн-выживание в хардкорных условиях.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">2000₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_rust" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
       </div>
 
       <!-- GTA V -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Grand Theft Auto V</h2>
-        <p class="mb-2">Огромный открытый мир и свобода действий.</p>
-        <p class="text-green-400 mb-2">1499₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_gta_v', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">GTA V</h3>
+          <p class="text-sm text-gray-600 mb-2">Открытый мир, криминальные приключения в Лос-Сантосе.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">2990₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_gtav" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
       </div>
 
-      <!-- Dead by Daylight -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg" alt="Dead by Daylight" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Dead by Daylight</h2>
-        <p class="mb-2">Многопользовательский хоррор на выживание.</p>
-        <p class="text-green-400 mb-2">799₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_dead_by_daylight', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
+      <!-- CS:GO Prime -->
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="CS:GO Prime" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">CS:GO Prime</h3>
+          <p class="text-sm text-gray-600 mb-2">Соревновательный шутер с привилегиями Prime-аккаунта.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">1540₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_csgo_prime" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
       </div>
 
       <!-- The Witcher 3 -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">The Witcher 3</h2>
-        <p class="mb-2">Легендарная ролевая игра про Геральта.</p>
-        <p class="text-green-400 mb-2">499₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_witcher_3', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- Cyberpunk 2077 -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Cyberpunk 2077</h2>
-        <p class="mb-2">Футуристический экшен от создателей Ведьмака.</p>
-        <p class="text-green-400 mb-2">1999₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_cyberpunk_2077', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- Rust -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg" alt="Rust" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Rust</h2>
-        <p class="mb-2">Жестокий выживальческий онлайн-мир.</p>
-        <p class="text-green-400 mb-2">899₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_rust', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- Phasmophobia -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg" alt="Phasmophobia" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Phasmophobia</h2>
-        <p class="mb-2">Кооперативный хоррор об охоте на призраков.</p>
-        <p class="text-green-400 mb-2">399₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_phasmophobia', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- It Takes Two -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/header.jpg" alt="It Takes Two" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">It Takes Two</h2>
-        <p class="mb-2">Приключенческая игра на двоих с креативным геймплеем.</p>
-        <p class="text-green-400 mb-2">999₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_it_takes_two', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- Hades -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="Hades" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Hades</h2>
-        <p class="mb-2">Рогалик о побеге из подземного царства.</p>
-        <p class="text-green-400 mb-2">539₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_hades', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
-      </div>
-
-      <!-- Don't Starve Together -->
-      <div class="bg-gray-800 p-4 rounded shadow-lg">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/322330/header.jpg" alt="Don't Starve Together" class="mb-4 rounded">
-        <h2 class="text-xl font-bold mb-2">Don't Starve Together</h2>
-        <p class="mb-2">Совместное выживание в мрачном мире.</p>
-        <p class="text-green-400 mb-2">299₽</p>
-        <button onclick="window.open('https://t.me/gambizz_tg_bot?start=buy_dont_starve_together', '_blank')" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded">Купить</button>
+      <div class="bg-white border border-gray-200 rounded shadow-sm hover:shadow-md transition">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3" class="w-full rounded-t">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">The Witcher 3</h3>
+          <p class="text-sm text-gray-600 mb-2">Эпическое фэнтези-приключение Геральта из Ривии.</p>
+          <div class="text-green-600 font-semibold text-base mb-3">450₽</div>
+          <a href="https://t.me/gambizz_tg_bot?start=buy_witcher3" target="_blank" class="block text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Купить</a>
+        </div>
       </div>
 
     </div>
   </main>
-  <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>Verification: 9e7d8a416182f6f5</body>
-</html>
+    </div>
+  </main>
+
+  <!-- Instructions -->
+  <section class="container mx-auto mt-10 bg-yellow-50 border border-yellow-200 rounded p-4">
+    <h3 class="text-lg font-semibold mb-2">Как купить:</h3>
+    <ol class="list-decimal list-inside text-sm text-gray-800">
+      <li>Выберите игру из каталога.</li>
+      <li>Нажмите кнопку «Купить» — вы будете перенаправлены в Telegram-бота.</li>
+      <li>Следуйте инструкциям в боте,пишите боту "Хочу купить игру"и название игры.После этого вы кидаете деньги на карту(которую вам кинет бот)и через минут 10 будет выполнена операция..</li>
+    </ol>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-4 mt-10 border-t">
+    <p class="text-sm text-gray-500">&copy; 2025 Gambizz Games Studio. Все права защищены.</p>
+  </footer>
+
 </body>
 </html>
